@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;800&display=swap');
+
+* {
+    z-index: 2;
+}
+
+.popup, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+
+}
+
+
+
+.overlay {
+    background: #666666;
+}
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #ffffff;
+    padding: 14px 28px;
+    border-radius: 6px;
+    width: 678px;
+    height: 396px;
+    text-align: center;
+    font: normal normal normal 18px/30px Montserrat;
+    color: black;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
+
+
+.nadpis-popup {
+    font: normal normal bold 24px/34px Montserrat;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.email {
+    width: 374px;
+    height: 56px;
+    font: normal normal bold 12px/15px Montserrat;
+    letter-spacing: 0px;
+    color: #8E929F;
+    padding-left: 15px;
+    border: 1px solid #E0E0E5;
+}
+
+.btn-odoslat {
+    background: #0F33FF 0% 0% no-repeat padding-box;
+    border-radius: 31px 31px 31px 0px;
+    opacity: 1;
+    width: 216px;
+    height: 62px;
+    margin-top: 38px;
+    padding: 22px;
+    border: none;
+    font: normal normal bold 16px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.btn-close {
+    background: url("../../../public/images/Component\ 16\ –\ 1.png") no-repeat;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.btn-close:hover {
+    background-size: 100%;
+    width: 52.8px;
+    height: 52.8px;
+    top: 7.6px;
+    right: 7.6px;
+}
+
+.prihlasenie {
+    padding: 13px 40px 13px 40px;
+    border: 1px solid #FFFFFF;
+    opacity: 1;
+    border-radius: 44px 44px 44px 0;
+
+
+}
+
+.error {
+    position: fixed;
+    margin-top: 155px;
+    color: red;
+    font-size: 0.8rem;
+}

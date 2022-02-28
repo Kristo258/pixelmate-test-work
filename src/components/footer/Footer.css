@@ -1,0 +1,19 @@
+.footer-container {
+    width: 100%;
+    height: 142px;
+    background: transparent linear-gradient(180deg, #161B40 0%, #140F29 100%) 0% 0% no-repeat padding-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font: normal normal normal 16px/24px Montserrat;
+    color: #C7C7C7;
+    padding: 0 60px 0 60px;
+}
+
+.logo-footer {
+    background-image: url("../../../public/images/Pixelmate_logo_claim_white.png");
+    width: 199px;
+    height: 38px;
+    background-size: cover;
+}

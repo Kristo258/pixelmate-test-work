@@ -1,0 +1,33 @@
+.container-text {
+    width: 35%;
+    position: relative;
+    left: 13%;
+}
+
+.nadpis-left {
+    text-align: left;
+    font: normal normal 800 60px/80px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+
+}
+
+.text {
+    text-align: left;
+    font: normal normal bold 18px/30px Montserrat;
+    letter-spacing: 0px;
+    color: #8E929F;
+    margin-top: 20px;
+}
+
+.button-kontakt {
+    width: 283px;
+    height: 62px;
+    background: #0F33FF 0% 0% no-repeat padding-box;
+    border-radius: 31px 31px 31px 0px;
+    font: normal normal bold 16px/19px Montserrat;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}

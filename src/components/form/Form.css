@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+.formContainer {
+    display:flex;
+    flex-direction: column;
+    width: 434px;
+    height: 423px;
+    max-width: 434px;
+    max-height: 423px;
+    background-color: #FFFFFF ;
+    border-radius: 6px;
+    opacity: 1;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    
+}
+
+.nadpis {
+    text-align: left;
+    font: normal normal bold 24px/34px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin-left: 0px;
+    margin-top: 30px;
+
+}
+
+#email {
+    font: normal normal bold 12px/15px Montserrat;
+    height: 56px;
+    width: 374px;
+    margin-bottom: 20px;
+    margin-top: 26px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E0E0E5;
+    padding: 15px;
+}
+
+#heslo {
+    font: normal normal bold 12px/15px Montserrat;
+    height: 56px;
+    width: 374px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E0E0E5;
+    padding: 15px;
+    margin-bottom: 28px;
+}
+
+.suhlas {
+    font: normal normal normal 14px/21px Montserrat;
+    margin-left: 36px;
+    width: 338px;
+    height: 39px;
+    display: block;
+    align-self: center;
+}
+
+.suhlasChck {
+    border: 1px solid #0F33FF;
+    border-radius: 31px;
+    opacity: 1;
+    width: 24px;
+    height: 24px;
+    appearance: none;
+    -webkit-appearance: none;
+    float: left;
+    align-self: center;
+    justify-self: center;
+}
+
+.suhlasChck:checked {
+    background-color: #0F33FF;
+}
+
+#submitBtn {
+    background: #0F33FF 0% 0% no-repeat padding-box;
+    border-radius: 31px 31px 31px 0px;
+    opacity: 1;
+    width: 374px;
+    height: 62px;
+    margin-top: 32px;
+    padding: 22px;
+    border: none;
+    font: normal normal bold 16px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.suhlas-ramcek {
+    border: red;
+}
+
+.email-error {
+    font: normal normal  12px/15px Montserrat;
+    color: red;
+    position: absolute;
+    margin-top:  -18px;
+    width: 374px;
+    text-align: center;
+}
+
+.pass-error {
+    font: normal normal  12px/15px Montserrat;
+    color: red;
+    position: absolute;
+    margin-top:  -24px;
+    width: 374px;
+    text-align: center;
+}
+
+.suhlas-error {
+    font: normal normal  12px/15px Montserrat;
+    color: red;
+    position: absolute;
+    margin-top:  7px;
+    width: 374px;
+    text-align: center;
+    
+}
