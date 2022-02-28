@@ -1,0 +1,55 @@
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-direction: row; 
+}
+
+.popis-left {
+    max-width: 600px;
+    flex: 1 0 100%;
+}
+
+.nadpis-1 {
+    text-align: left;
+    font: normal normal bold 16px/19px Montserrat;
+    color: #0F33FF;
+    text-transform: uppercase;
+}
+
+.nadpis-2 {
+    font: normal normal 800 48px/64px Montserrat;
+    color: #000000;
+}
+
+.text-about {
+    font: normal normal normal 18px/30px Montserrat;
+    color: #000000;
+    align-self: flex-end;
+}
+
+.popis-right {
+    background-image: url("../../../public/images/Component\ 13\ –\ 1.png");
+    width: fit-content;
+    max-width: 600px;
+    display: flex;
+    flex: 1 0 100%;
+}
+
+.tlacitko-dole {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.tlacitko-dole button {
+    background: #0F33FF 0% 0% no-repeat padding-box;
+    border-radius: 31px 31px 31px 0px;
+    border-style: none;
+    font: normal normal bold 16px/19px Montserrat;
+    color: #FFFFFF;
+    padding: 22px 42px 22px 42px;
+
+}

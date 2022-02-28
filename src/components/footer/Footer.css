@@ -4,7 +4,8 @@
     background: transparent linear-gradient(180deg, #161B40 0%, #140F29 100%) 0% 0% no-repeat padding-box;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:space-around;
+    flex-wrap: wrap;
     align-items: center;
     font: normal normal normal 16px/24px Montserrat;
     color: #C7C7C7;
@@ -16,4 +17,12 @@
     width: 199px;
     height: 38px;
     background-size: cover;
+}
+
+.copyright {
+    width: 370px;
+}
+
+.ochrana-udajov {
+    width: 370px;
 }

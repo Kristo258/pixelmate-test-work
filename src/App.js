@@ -6,6 +6,7 @@ import Popup from './components/popup/Popup';
 import Sponzori from './components/sponzori/Sponzori';
 import Left from './components/left-side/Left';
 import Footer from './components/footer/Footer';
+import AboutPx from './components/about-pixel/AboutPx';
 
 function App() {
   return (
@@ -18,9 +19,15 @@ function App() {
       <div className="form"><Form/></div>
 
       <div className='sponzori'><Sponzori /></div>
-      
+      </div>
+      <div className='second-container'>
+      <div className='about'><AboutPx /></div>
+
+
+    
       </div>
       <div className='footer'><Footer /></div>
+      
     </div>
   );
 }
