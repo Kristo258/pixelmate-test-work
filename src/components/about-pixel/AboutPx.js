@@ -1,8 +1,10 @@
 import React from "react";
 import "./AboutPx.css"
+import { useNavigate } from "react-router-dom";
 
 const AboutPx = ()=>{
     
+    const navigate = useNavigate();
     
     return ( <div>
         <div className="about-container">
@@ -21,7 +23,7 @@ const AboutPx = ()=>{
         </div>
 
     <div className="tlacitko-dole">
-    <button>CO DALŠÍHO SE ŠUŠKÁ →</button>
+    <button onClick={()=>{navigate("/dizajneri")}}>CO DALŠÍHO SE ŠUŠKÁ →</button>
     </div>
 
     </div>

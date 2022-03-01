@@ -10,32 +10,30 @@ import AboutPx from './components/about-pixel/AboutPx';
 import KartaMinimal from './components/karta-minimal/KartaMinimal';
 import Dizajneri from './components/dizajneri/Dizajneri';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import Home from './components/_sites/home/Home';
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import Profile from './components/_sites/profile/Profile';
 
 function App() {
+
+
   return (
-
-
-    <div className="App">
-      <Dizajneri />
-
-      <div className='logo-top'></div>
+  <Router>
+      
       <div className='menu'><Menu/></div>
-      <div className='flex-container'>
       
-      <div className='left'><Left /></div>
-      <div className="form"><Form/></div>
-
-      <div className='sponzori'><Sponzori /></div>
-      </div>
-      <div className='second-container'>
-      <div className='about'><AboutPx /></div>
-
-
+    <Routes>
+      <Route path='/' element={<Home /> }/>
+      <Route path='/dizajneri' element={<Dizajneri />}/>
+      <Route path='/profil' element={<Profile />}/>
+    </Routes>
+      
+      
+    <div className='footer'><Footer /></div>
+    </Router>
     
-      </div>
-      <div className='footer'><Footer /></div>
-      
-    </div>
+
 
   );
 }

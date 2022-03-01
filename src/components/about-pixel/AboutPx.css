@@ -51,5 +51,6 @@
     font: normal normal bold 16px/19px Montserrat;
     color: #FFFFFF;
     padding: 22px 42px 22px 42px;
+    width: fit-content;
 
 }

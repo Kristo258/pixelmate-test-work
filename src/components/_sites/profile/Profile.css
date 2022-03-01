@@ -1,0 +1,132 @@
+.container-flex {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+    padding-top: 150px;
+    width:fit-content;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.nick {
+    font: normal normal medium 24px/30px Montserrat;
+    color: #140F29;
+    margin-bottom: 10px;
+}
+
+.meno-priezvisko {
+    font: normal normal bold 30px/34px Montserrat;
+    color: #140F29;
+    margin-bottom: 13px;
+}
+
+.emailova-adresa-profil {
+    font: normal normal medium 20px/30px Montserrat;
+    color: #8E929F;
+    margin-bottom: 39px;
+}
+
+.adresa-profil {
+    background: #ECEFFF 0% 0% no-repeat padding-box;
+    border-radius: 19px;
+    width: 342px;
+    height: 105px;
+
+    margin-bottom: 33px;
+    padding: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+img {
+    justify-content: flex-start;
+    height:fit-content;
+}
+
+.mesto {
+    font: normal normal bold 18px/22px Montserrat;
+    color: #16181C;
+}
+
+.ulica {
+    font: normal normal normal 16px/24px Montserrat;
+    color: #000000;
+}
+
+.zip {
+    font: normal normal normal 16px/24px Montserrat;
+    color: #000000;
+}
+
+.stranka {
+    margin: auto;
+    text-decoration: underline;
+    font: normal normal medium 20px/30px Montserrat;
+    color: #1232F9;
+    margin-bottom: 33px;
+}
+
+.button-profil {
+    width: 135px;
+    height: 48px;
+    background: #ECEFFF 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+    border: none;
+    font: normal normal bold 16px/19px Montserrat;
+    color: #0F33FF;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+}
+
+.logo-top-black {
+    position: absolute;
+    left: 3.6%;
+    top: 58px;
+    background-image: url("../../../../public/images/Pixelmate_logo_claim_white-1.png");
+    width: 180px;
+    height: 35px;
+    background-size: cover;
+    z-index: 6;
+}
+
+.obrazok-dizajner {
+    background: url("../../../../public/images/Component\ 15\ –\ 1.png");
+    height: 620px;
+    width: 557px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+}
+
+.karta-container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:fit-content;
+    margin: auto;
+}
+
+.popis {
+    padding: 30px 30px 50px 30px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 70px #16181C1A;
+    border-radius: 25px 25px 25px 0px;
+}
+
+.veta {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 70px #16181C1A;
+    border-radius: 25px 25px 25px 0px;
+    width:100%;
+    height: fit-content;
+    font: normal normal normal 18px/30px Montserrat;
+    color: #000000;
+    padding: 30px;
+}
+
+.firma {
+    font: normal normal bold 18px/34px Montserrat;
+    color: #140F29;
+}

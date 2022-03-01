@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react"
 import "./Popup.css"
+import { useLocation } from "react-router-dom";
 
 const Popup = (props)=>{
-
+    let location = useLocation();
     const [showPopup, setShowPopup] = useState(false);
     const [emailValue, setEmailValue] = useState("");
     const [error, setError] = useState("");
+    const [menuStyle, setMenuStyle] = useState("prihlasenie");
 
 
     const togglePopup = ()=>{
@@ -28,9 +30,19 @@ const Popup = (props)=>{
         }
     }
 
+    useEffect(()=>
+    { 
+    
+        if(location.pathname === '/dizajneri' || location.pathname === '/profil'){
+            setMenuStyle("prihlasenie-black") 
+        } else {
+            setMenuStyle("prihlasenie")
+        }
+    },[location])
+
     return (
         <div >
-            <a className="prihlasenie" onClick={togglePopup}>Prihlásiť sa</a>
+            <a className={menuStyle} onClick={togglePopup}>Prihlásiť sa</a>
 
             {showPopup && <div className="popup">
                 

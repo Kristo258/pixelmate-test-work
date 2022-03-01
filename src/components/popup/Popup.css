@@ -100,13 +100,19 @@
     border: 1px solid #FFFFFF;
     opacity: 1;
     border-radius: 44px 44px 44px 0;
+}
 
-
+.prihlasenie-black {
+    padding: 13px 40px 13px 40px;
+    border: 1px solid #000000;
+    opacity: 1;
+    border-radius: 44px 44px 44px 0;
 }
 
 .error {
-    position: fixed;
-    margin-top: 155px;
+    position: absolute;
+    margin-top: 100px;
     color: red;
     font-size: 0.8rem;
+    z-index: 50;
 }

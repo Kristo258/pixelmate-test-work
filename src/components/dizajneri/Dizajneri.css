@@ -3,12 +3,16 @@
     flex-wrap: wrap;
     gap: 30px;
     padding: 0 200px 0 200px;
+    background: transparent linear-gradient(165deg, #ECEFFF66 0%, #ECEFFF 100%) 0% 0% no-repeat padding-box;
+    padding-top: 100px;
+    margin-top: -110px;
+    padding-bottom: 40px;
 }
 
 .search {
     width: 834px;
     height: 120px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #ffffff 0% 0% no-repeat padding-box;
     box-shadow: 0px 4px 35px #0000001F;
     display: flex;
     align-items: center;
@@ -38,6 +42,9 @@
     border-radius: 31px 31px 31px 0px;
     color: #FFFFFF;
     margin-left: 20px;
+    border: none;
+    font: normal normal bold 16px/19px Montserrat;
+    color: #FFFFFF;
 }
 
 .x-button {
@@ -50,4 +57,15 @@
     background-color: rgba(255, 255, 255, 0);
     margin-right: 20px;
     border-radius: 0;
+}
+
+.logo-top-black {
+    position: absolute;
+    left: 3.6%;
+    top: 58px;
+    background-image: url("../../../public/images/Pixelmate_logo_claim_white-1.png");
+    width: 180px;
+    height: 35px;
+    background-size: cover;
+    z-index: 6;
 }

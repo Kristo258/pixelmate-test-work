@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import KartaMinimal from "../karta-minimal/KartaMinimal";
 import "./Dizajneri.css"
+import { useNavigate } from "react-router-dom";
 
-const Dizajneri = ()=>{
+const Dizajneri = ()=>{ 
     const [chlapi, setChlapi] = useState([]);
     const [input, setInput] = useState("");
     const [temp, setTemp] = useState();
+    let navigate = useNavigate();
 
     useEffect(()=>{
         getData();
@@ -32,6 +34,7 @@ const Dizajneri = ()=>{
     
     return (
         <div>
+            <div className="logo-top-black" onClick={()=>{navigate("/")}}></div>
             <div className="search">
                 <input type="text" placeholder="Vyhledávání" onChange={handleInputChange} value={input}/>
                 <button className="x-button" onClick={()=>{setInput("")}}>X</button><button className="hladat-btn" onClick={searchButtonClick}>VYHLEDAT</button>
@@ -47,7 +50,9 @@ const Dizajneri = ()=>{
                mesto={dizajner.address.city} 
                ulica={dizajner.address.street} 
                zip={dizajner.address.zipcode}
-               website={dizajner.website}/>
+               stranka={dizajner.website}
+               popis={dizajner.company.catchPhrase}
+               company={dizajner.company.name}/>
            ))}
         </div>
             

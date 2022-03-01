@@ -3,7 +3,7 @@
     height: 100%;
     position: absolute;
     
-    min-height: 775px;
+    
 }
 
 .form {
@@ -14,7 +14,7 @@
     position: absolute;
     right: 3.6%;
     top:58px;
-    z-index: 5;
+    z-index: 10;
 }
 
 .logo-top {
@@ -25,6 +25,18 @@
     width: 180px;
     height: 35px;
     background-size: cover;
+    z-index: 6;
+}
+
+.logo-top-black {
+    position: absolute;
+    left: 3.6%;
+    top: 58px;
+    background-image: url("../public/images/Pixelmate_logo_claim_white-1.png");
+    width: 180px;
+    height: 35px;
+    background-size: cover;
+    z-index: 6;
 }
 
 .sponzori {
@@ -35,8 +47,11 @@
 
 }
 
+
 .footer {
- width: 100%;
+    width: 100%;
+    position: relative;
+
 
 }
 
@@ -57,12 +72,17 @@
     padding-top: 200px;
     justify-content: space-around;
     gap: 30px;
-    display: none;
 }
 
 .second-container {
     padding: 30px 215px 30px 215px;
     max-width: 1680px;
     margin: auto;
-    display: none;
+    margin-bottom: 20px;
+}
+
+.home {
+    width: 100%;
+    
+
 }
