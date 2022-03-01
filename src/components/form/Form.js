@@ -38,7 +38,7 @@ const Form = ()=>{
     }
 
     useEffect(()=>{
-        console.log(handleErrors);
+        
         if (Object.keys(handleErrors).length === 0 && isSubmit){
             console.log(formValues);
         }

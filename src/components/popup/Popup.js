@@ -3,7 +3,6 @@ import "./Popup.css"
 
 const Popup = (props)=>{
 
-    console.log(props.clicked);
     const [showPopup, setShowPopup] = useState(false);
     const [emailValue, setEmailValue] = useState("");
     const [error, setError] = useState("");

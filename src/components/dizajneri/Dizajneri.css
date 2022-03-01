@@ -1,0 +1,53 @@
+.container-dizajn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 200px 0 200px;
+}
+
+.search {
+    width: 834px;
+    height: 120px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 35px #0000001F;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.search input {
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E0E0E5;
+    background-image: url("../../../public/images/Icon\ feather-search.png");
+    background-size:20px;
+    background-position: 20px center;
+    padding-left: 50px;
+
+}
+
+.hladat-btn {
+    width: 216px;
+    height: 100%;
+    background: #0F33FF 0% 0% no-repeat padding-box;
+    border-radius: 31px 31px 31px 0px;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+.x-button {
+    color: #0F33FF;
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin-left: -40px;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0);
+    margin-right: 20px;
+    border-radius: 0;
+}

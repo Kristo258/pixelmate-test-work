@@ -37,6 +37,7 @@
 
 .footer {
  width: 100%;
+
 }
 
 .left {
@@ -56,11 +57,12 @@
     padding-top: 200px;
     justify-content: space-around;
     gap: 30px;
-
+    display: none;
 }
 
 .second-container {
     padding: 30px 215px 30px 215px;
     max-width: 1680px;
     margin: auto;
+    display: none;
 }

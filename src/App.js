@@ -7,10 +7,17 @@ import Sponzori from './components/sponzori/Sponzori';
 import Left from './components/left-side/Left';
 import Footer from './components/footer/Footer';
 import AboutPx from './components/about-pixel/AboutPx';
+import KartaMinimal from './components/karta-minimal/KartaMinimal';
+import Dizajneri from './components/dizajneri/Dizajneri';
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 
 function App() {
   return (
+
+
     <div className="App">
+      <Dizajneri />
+
       <div className='logo-top'></div>
       <div className='menu'><Menu/></div>
       <div className='flex-container'>
@@ -29,6 +36,7 @@ function App() {
       <div className='footer'><Footer /></div>
       
     </div>
+
   );
 }
 
