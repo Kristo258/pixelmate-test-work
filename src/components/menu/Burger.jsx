@@ -74,7 +74,7 @@ function Burger() {
             <div></div>
         </StyledBurger>
 
-        <Menu open={open} location={actualLocation}/>
+        <Menu open={open} location={actualLocation} closeMenu={close => setOpen(close)}/>
         </>
 
     );

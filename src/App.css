@@ -26,6 +26,13 @@
     height: 35px;
     background-size: cover;
     z-index: 6;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo-top:hover {
+    left: 3.4%;
+    width: 190px;
 }
 
 .logo-top-black {
@@ -37,6 +44,14 @@
     height: 35px;
     background-size: cover;
     z-index: 6;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo-top-black:hover {
+    left: 3.4%;
+    width: 190px;
+
 }
 
 .sponzori {

@@ -73,7 +73,8 @@
     float: left;
     align-self: center;
     justify-self: center;
-}
+    cursor: pointer;
+    }
 
 .suhlasChck:checked {
     background-color: #0F33FF;
@@ -88,9 +89,19 @@
     margin-top: 32px;
     padding: 22px;
     border: none;
-    font: normal normal bold 16px/19px Montserrat;
+    font: normal normal bold 16px Montserrat;
     letter-spacing: 0px;
     color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#submitBtn:hover {
+    background-color: #FFFFFF;
+    border: #0F33FF;
+    border: solid 1px;
+    color: #0F33FF;
+    font: normal normal bold 16px Montserrat;
 }
 
 .suhlas-ramcek {

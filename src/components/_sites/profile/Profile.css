@@ -78,6 +78,13 @@ img {
     color: #0F33FF;
     text-transform: uppercase;
     margin-bottom: 36px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.button-profil:hover {
+    background-color: #0F33FF;
+    color: #FFFFFF;
 }
 
 .logo-top-black {

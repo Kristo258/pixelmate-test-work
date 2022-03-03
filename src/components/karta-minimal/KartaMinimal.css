@@ -77,4 +77,11 @@ img {
     height: 62px;
     background-color: #FFFFFF;
     margin: auto;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.button-minimal:hover {
+    background-color: #0F33FF;
+    color: #FFFFFF;
 }

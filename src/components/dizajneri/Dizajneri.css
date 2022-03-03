@@ -10,7 +10,7 @@
 }
 
 .search {
-    width: 834px;
+    max-width: 834px;
     height: 120px;
     background: #ffffff 0% 0% no-repeat padding-box;
     box-shadow: 0px 4px 35px #0000001F;
@@ -45,6 +45,14 @@
     border: none;
     font: normal normal bold 16px/19px Montserrat;
     color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.hladat-btn:hover {
+    background-color: #ffffff;
+    color: #0F33FF;
+    border: solid 1px #0F33FF;
 }
 
 .x-button {
@@ -52,12 +60,15 @@
     width: 30px;
     height: 30px;
     border: none;
-    margin-left: -40px;
+    margin-left: -45px;
     font-size: 25px;
     background-color: rgba(255, 255, 255, 0);
     margin-right: 20px;
     border-radius: 0;
+    cursor: pointer;
 }
+
+
 
 .logo-top-black {
     position: absolute;
@@ -68,4 +79,5 @@
     height: 35px;
     background-size: cover;
     z-index: 6;
+
 }
