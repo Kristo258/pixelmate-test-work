@@ -56,7 +56,8 @@
     padding: 22px 42px 22px 42px;
     width: fit-content;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 
 }
 
@@ -64,4 +65,5 @@
     color: #0F33FF;
     background-color: #FFFFFF;
     border: solid 1px #0F33FF;
+    padding: 21px 41px 21px 41px;
 }

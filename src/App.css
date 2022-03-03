@@ -97,6 +97,7 @@
 @media (max-width: 768px) {
     .flex-container {
         padding: 200px 50px 0 50px;
+        font-size: 10px;
     }
 
     .left {

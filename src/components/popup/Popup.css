@@ -79,6 +79,14 @@
     letter-spacing: 0px;
     color: #FFFFFF;
     cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-odoslat:hover {
+    background: #ffffff;
+    border: solid 1px #0F33FF;
+    color: #0F33FF;
 }
 
 .btn-close {
@@ -92,11 +100,13 @@
 }
 
 .btn-close:hover {
+    position: absolute;
     background-size: 100%;
-    width: 52.8px;
-    height: 52.8px;
     top: 7.6px;
     right: 7.6px;
+    width: 52.8px;
+    height: 52.8px;
+    
 }
 
 .prihlasenie {
@@ -159,8 +169,15 @@
 
 .error-popup {
     position: absolute;
-    margin-top: 165px;
+    margin-top: 135px;
     color: red;
     font-size: 0.8rem;
     z-index: 50;
+}
+
+@media (max-width: 962px) {
+    .error-popup {
+        position: absolute;
+        margin-top: 165px;
+    }
 }
