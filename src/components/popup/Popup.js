@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react"
 import "./Popup.css"
 import { useLocation } from "react-router-dom";
 
-const Popup = (props)=>{
+const Popup = ()=>{
     let location = useLocation();
     const [showPopup, setShowPopup] = useState(false);
     const [emailValue, setEmailValue] = useState("");
     const [error, setError] = useState("");
     const [menuStyle, setMenuStyle] = useState("prihlasenie");
+
 
 
     const togglePopup = ()=>{
@@ -52,7 +53,7 @@ const Popup = (props)=>{
                     <div className="nadpis-popup">Prihlásiť sa</div>
                     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
                     <input type="email" name="email" className="email" placeholder="Váš email" value={emailValue} onChange={handleChangeValue}/>
-                    <p className="error">{error}</p>
+                    <p className="error-popup">{error}</p>
                     <button className="btn-odoslat" onClick={sendDataToConsole}>Odoslať</button>
                 </div>
             </div>}

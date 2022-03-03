@@ -10,6 +10,8 @@
 .popis-left {
     max-width: 600px;
     flex: 1 0 100%;
+    padding-top: 100px;
+
 }
 
 .nadpis-1 {

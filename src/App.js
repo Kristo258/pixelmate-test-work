@@ -14,6 +14,8 @@ import Home from './components/_sites/home/Home';
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Profile from './components/_sites/profile/Profile';
+import RightNav from './components/menu/RightNav';
+import Burger from './components/menu/Burger';
 
 function App() {
 
@@ -21,7 +23,7 @@ function App() {
   return (
   <Router>
       
-      <div className='menu'><Menu/></div>
+      <div className='menu'><Burger/></div>
       
     <Routes>
       <Route path='/' element={<Home /> }/>
