@@ -56,6 +56,7 @@ const MenuContainer = styled.div`
         opacity: ${({open}) => open ? "0.5" : "0"};
         visibility: ${({open}) => open ? "visible" : "hidden"};
         transition: opacity 0.3s ease-in-out;
+        z-index: -1;
     
     }
   }

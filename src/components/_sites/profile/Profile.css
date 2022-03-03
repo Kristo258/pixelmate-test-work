@@ -10,6 +10,13 @@
     margin-bottom: 50px;
 }
 
+@media (max-width: 768px) {
+    .container-flex {
+        margin-left: -40px;
+    }
+    
+}
+
 .nick {
     font: normal normal medium 24px/30px Montserrat;
     color: #140F29;
@@ -105,6 +112,13 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     margin: auto;
+}
+
+@media (max-width:768px) {
+    .obrazok-dizajner {
+        
+        width: 400px;
+    }
 }
 
 .karta-container-2 {

@@ -63,6 +63,8 @@
 }
 
 
+
+
 .footer {
     width: 100%;
     position: relative;
@@ -72,8 +74,10 @@
 
 .left {
     max-width: 590px;
+    
 
 }
+
 
 .flex-container {
     background-image: url("../public/images/Video_screenshot_Mirek.png");
@@ -87,6 +91,20 @@
     padding-top: 200px;
     justify-content: space-around;
     gap: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+        padding: 200px 50px 0 50px;
+    }
+
+    .left {
+        padding-left: 50px;
+
+    }
+
+    
 }
 
 .second-container {
@@ -95,6 +113,15 @@
     margin: auto;
     margin-bottom: 20px;
     margin-top: 67px;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .second-container {
+        padding: 50px 50px 0 50px;
+    }
+
+    
 }
 
 .home {
