@@ -20,8 +20,7 @@ const Profile = () => {
     const fetchData = async () => {
         const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
         const data = await res.json();
-        const {user} = data;
-        setDizajner(user);
+        setDizajner(data);
     };
     console.log(dizajner);
 
@@ -38,7 +37,7 @@ const Profile = () => {
             <img src={require("./Group 3358.png")} alt="x" />
             <div className="adresa-vpravo">
             <div className="mesto">{dizajner.address.city}</div>
-            <div className="ulica">{dizajner.adress.street}</div>
+            <div className="ulica">{dizajner.address.street}</div>
             <div className="zip">{dizajner.address.zipcode}</div>
             </div>
         </div>
