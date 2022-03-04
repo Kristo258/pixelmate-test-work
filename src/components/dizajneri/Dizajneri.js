@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const Dizajneri = ()=>{ 
     const [chlapi, setChlapi] = useState([]);
     const [input, setInput] = useState("");
-    const [temp, setTemp] = useState();
+    const [loading, setLoading] = useState(true);
     let navigate = useNavigate();
 
     useEffect(()=>{
@@ -17,6 +17,7 @@ const Dizajneri = ()=>{
         const response = await fetch("https://jsonplaceholder.typicode.com/users"); 
         const data = await response.json();
         setChlapi(data);
+        setLoading(false);
     }
 
     const handleInputChange = (e)=>{
@@ -39,22 +40,27 @@ const Dizajneri = ()=>{
                 <input type="text" placeholder="Vyhledávání" onChange={handleInputChange} value={input}/>
                 <button className="x-button" onClick={()=>{setInput("")}}>X</button><button className="hladat-btn" onClick={searchButtonClick}>VYHLEDAT</button>
             </div>
-            <div className="container-dizajn">
+            {loading ? <div class="loadingio-spinner-rolling-s9k1qnjmbq"><div class="ldio-3dscfi9z2gp">
+                <div></div>
+                </div></div> : <div className="container-dizajn">
+            
 
             
-           {chlapi.map(dizajner => (
-               <KartaMinimal key={dizajner.id}
-               nick={dizajner.username} 
-               meno={dizajner.name} 
-               email={dizajner.email} 
-               mesto={dizajner.address.city} 
-               ulica={dizajner.address.street} 
-               zip={dizajner.address.zipcode}
-               stranka={dizajner.website}
-               popis={dizajner.company.catchPhrase}
-               company={dizajner.company.name}/>
-           ))}
-        </div>
+            {chlapi.map(dizajner => (
+                <KartaMinimal key={dizajner.id}
+                nick={dizajner.username} 
+                meno={dizajner.name} 
+                email={dizajner.email} 
+                mesto={dizajner.address.city} 
+                ulica={dizajner.address.street} 
+                zip={dizajner.address.zipcode}
+                stranka={dizajner.website}
+                popis={dizajner.company.catchPhrase}
+                company={dizajner.company.name}/>
+            ))}
+         </div>}
+            
+            
             
             </div>
             
