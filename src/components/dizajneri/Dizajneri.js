@@ -7,6 +7,8 @@ const Dizajneri = ()=>{
     const [chlapi, setChlapi] = useState([]);
     const [input, setInput] = useState("");
     const [loading, setLoading] = useState(true);
+
+    
     let navigate = useNavigate();
 
     useEffect(()=>{
@@ -34,15 +36,13 @@ const Dizajneri = ()=>{
     
     
     return (
-        <div>
+        <div className="whole"> 
             <div className="logo-top-black" onClick={()=>{navigate("/")}}></div>
             <div className="search">
                 <input type="text" placeholder="Vyhledávání" onChange={handleInputChange} value={input}/>
                 <button className="x-button" onClick={()=>{setInput("")}}>X</button><button className="hladat-btn" onClick={searchButtonClick}>VYHLEDAT</button>
             </div>
-            {loading ? <div class="loadingio-spinner-rolling-s9k1qnjmbq"><div class="ldio-3dscfi9z2gp">
-                <div></div>
-                </div></div> : <div className="container-dizajn">
+            <div className="container-dizajn">
             
 
             
@@ -58,7 +58,10 @@ const Dizajneri = ()=>{
                 popis={dizajner.company.catchPhrase}
                 company={dizajner.company.name}/>
             ))}
-         </div>}
+         </div>
+            {loading ? <div class="loadingio-spinner-rolling-s9k1qnjmbq"><div class="ldio-3dscfi9z2gp">
+                <div></div>
+                </div></div> : null}
             
             
             

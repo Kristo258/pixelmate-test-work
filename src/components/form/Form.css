@@ -74,11 +74,13 @@
     align-self: center;
     justify-self: center;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
     }
 
 .suhlasChck:checked {
     background-color: #0F33FF;
 }
+
 
 #submitBtn {
     background: #0F33FF 0% 0% no-repeat padding-box;

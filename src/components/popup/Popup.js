@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import "./Popup.css"
 import { useLocation } from "react-router-dom";
+import {useTransition, animated} from "react-spring"
 
 const Popup = ()=>{
     let location = useLocation();
@@ -8,6 +9,12 @@ const Popup = ()=>{
     const [emailValue, setEmailValue] = useState("");
     const [error, setError] = useState("");
     const [menuStyle, setMenuStyle] = useState("prihlasenie");
+    const transition = useTransition(showPopup, {
+        from: {opacity: 0},
+        enter: {opacity: 1},
+        leave: {opacity: 0},
+
+    });
 
 
 
@@ -45,7 +52,8 @@ const Popup = ()=>{
         <div >
             <a className={menuStyle} onClick={togglePopup}>Prihlásiť sa</a>
 
-            {showPopup && <div className="popup">
+            {transition((style, item)=>
+                item && <animated.div style={style} className="popup">
                 
                 <div className="overlay" onClick={togglePopup}></div>
                 <div className="popup-content">
@@ -56,7 +64,7 @@ const Popup = ()=>{
                     <p className="error-popup">{error}</p>
                     <button className="btn-odoslat" onClick={sendDataToConsole}>Odoslať</button>
                 </div>
-            </div>}
+            </animated.div>  )}
             
 
         </div>
