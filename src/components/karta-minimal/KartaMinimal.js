@@ -1,11 +1,13 @@
 import React from "react";
 import "./KartaMinimal.css"
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Profile from "../_sites/profile/Profile";
 
-const KartaMinimal = ({key, meno, email, mesto, ulica, zip, stranka, popis, company})=>{
+const KartaMinimal = ({key, meno, email, mesto, ulica, zip, stranka, popis, company, dizajner})=>{
 
     const navigate = useNavigate();
+    let {id} = useParams();
+    console.log(dizajner);
 
     return (
         <div className="karta-container">
@@ -22,7 +24,8 @@ const KartaMinimal = ({key, meno, email, mesto, ulica, zip, stranka, popis, comp
             </div>
             <div className="stranka">www.{stranka}</div>
             <button className="button-minimal" onClick={()=>{ 
-                navigate("/profil", {state:{meno:meno, email:email, mesto:mesto, ulica:ulica, zip:zip, stranka:stranka, id:key, popis:popis, firma:company}})
+                navigate(`/dizajneri/${dizajner.id}`, {state:{meno:meno, email:email, mesto:mesto, ulica:ulica, zip:zip, stranka:stranka, id:key, popis:popis, firma:company, dizajner:dizajner}});
+                console.log(dizajner);
                 }}>ZOBRAZIT PROFIL →</button>
         </div>
     )

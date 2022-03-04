@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import KartaMinimal from "../karta-minimal/KartaMinimal";
 import "./Dizajneri.css"
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 const Dizajneri = ()=>{ 
     const [chlapi, setChlapi] = useState([]);
@@ -10,6 +10,7 @@ const Dizajneri = ()=>{
 
     
     let navigate = useNavigate();
+    let {} = useParams();
 
     useEffect(()=>{
         getData();
@@ -42,7 +43,10 @@ const Dizajneri = ()=>{
                 <input type="text" placeholder="Vyhledávání" onChange={handleInputChange} value={input}/>
                 <button className="x-button" onClick={()=>{setInput("")}}>X</button><button className="hladat-btn" onClick={searchButtonClick}>VYHLEDAT</button>
             </div>
-            <div className="container-dizajn">
+           
+            {loading ? <div class="loadingio-spinner-rolling-s9k1qnjmbq"><div class="ldio-3dscfi9z2gp">
+                <div></div>
+                </div></div> :  <div className="container-dizajn">
             
 
             
@@ -56,12 +60,10 @@ const Dizajneri = ()=>{
                 zip={dizajner.address.zipcode}
                 stranka={dizajner.website}
                 popis={dizajner.company.catchPhrase}
-                company={dizajner.company.name}/>
+                company={dizajner.company.name}
+                dizajner={dizajner}/>
             ))}
-         </div>
-            {loading ? <div class="loadingio-spinner-rolling-s9k1qnjmbq"><div class="ldio-3dscfi9z2gp">
-                <div></div>
-                </div></div> : null}
+         </div>}
             
             
             
